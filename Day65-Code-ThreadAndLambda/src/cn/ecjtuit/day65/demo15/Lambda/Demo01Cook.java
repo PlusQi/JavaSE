@@ -18,6 +18,9 @@ public class Demo01Cook {
         invokeCook(()->{
             System.out.println("吃饭！");
         });
+
+        //优化省略Lambda
+        invokeCook(()-> System.out.println("吃饭！"));
     }
 
 

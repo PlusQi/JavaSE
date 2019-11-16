@@ -14,6 +14,43 @@ public class Demo03File {
         show01();
         System.out.println("==================");
         show02();
+        System.out.println("==================");
+        show03();
+        System.out.println("==================");
+        show04();
+    }
+
+    /*
+    * public long length():返回由此File表示的文件的长度
+    * 获取的是构造方法指定的文件的大小，以字节为单位
+    * 注意：
+    *   文件夹是没有大小概念的，不能获取文件夹的大小
+    *   如果构造如果构造方法中给出的路径不存在，那么length方法返回0
+    * */
+    private static void show04() {
+        File f1 = new File("D:\\Documents\\Desktop\\images\\dhw4.jpg");
+        long l1 = f1.length();
+        System.out.println(l1);//20125
+
+        File f2 = new File("D:\\Documents\\Desktop\\images\\4.jpg");
+        System.out.println(f2.length());//0
+
+        File f3 = new File("D:\\Documents\\Desktop\\images");
+        System.out.println(f2.length());//0 文件夹没有大小概念
+    }
+
+    /*
+    * public String getName():返回由此File表示的文件或目录的名称
+    * 获取的就是构造方法传递路径的结尾部分(文件/文件夹)
+    * */
+    private static void show03() {
+        File f1 = new File("D:\\Example\\Basic-Code\\13_FileAndRecursion\\3.txt");
+        String name1 = f1.getName();
+        System.out.println(name1);//3.txt
+
+        File f2 = new File("D:\\Example\\Basic-Code\\13_FileAndRecursion");
+        String name2 = f2.getName();
+        System.out.println(name2);//13_FileAndRecursion
     }
 
     /*

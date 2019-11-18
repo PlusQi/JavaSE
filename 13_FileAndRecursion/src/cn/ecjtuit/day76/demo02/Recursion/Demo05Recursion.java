@@ -22,7 +22,6 @@ public class Demo05Recursion {
     public static void getAllFile(File dir){
         File[] files = dir.listFiles();
         for (File file : files) {
-            //System.out.println(dir);//打印被遍历的目录名称
             //对遍历得到的File对象file进行判断，判断是否是文件夹
             if (file.isDirectory()){
                 //file是一个文件夹，则继续遍历这个文件夹

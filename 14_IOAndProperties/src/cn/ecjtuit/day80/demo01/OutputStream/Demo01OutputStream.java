@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
-* java.io.OutputStream:此抽象类是表示输出字节流的所有类的超类
+* java.io.OutputStream:此抽象类是表示字节输出流的所有类的超类
 * 定义了一些子类共性的成员方法：
 *   public void close(): 关闭此输出流并释放与此流相关联的任何系统资源
 *   public void flush(): 刷新此输出流并强制任何缓冲的输出字节被写出

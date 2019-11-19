@@ -1,4 +1,9 @@
 package cn.ecjtuit.day80.demo01.OutputStream;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 /*
 * java.io.OutputStream:此抽象类是表示输出字节流的所有类的超类
 * 定义了一些子类共性的成员方法：
@@ -31,7 +36,13 @@ package cn.ecjtuit.day80.demo01.OutputStream;
 *   3.释放资源(流使用会占用一定的内存，使用完毕要把内存清空，提供程序的效率)
 * */
 public class Demo01OutputStream {
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        //1.创建一个FileOutputStream对象，构造方法中传递写入数据的目的地
+        FileOutputStream fos = new FileOutputStream("D:\\Documents\\Desktop\\1.txt");
+        //2.调用FileOutputStream对象中的write方法，把数据写入到文件中
+        //public abstract void write(int b): 将指定的字节输出流
+        fos.write(97);
+        //3.释放资源(流使用会占用一定的内存，使用完毕要把内存清空，提供程序的效率)
+        fos.close();
     }
 }

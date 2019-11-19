@@ -23,7 +23,7 @@ import java.io.IOException;
 *       String name:目的地是一个文件的路径
 *       File file：目的地是一个文件
 *   构造方法的作用：
-*       1.创建要给FIleOutputStream对象
+*       1.创建要给FileOutputStream对象
 *       2.会根据构造方法中传递的文件/文件路径，创建一个空的文件
 *       3.会把FileOutputStream对象指向创建好的文件
 *

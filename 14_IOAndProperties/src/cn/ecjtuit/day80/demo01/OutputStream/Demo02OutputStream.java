@@ -28,6 +28,7 @@ public class Demo02OutputStream {
         * */
         byte[] bytes = {65, 66, 67, 68, 69};//ABCDE
         //byte[] bytes = {-65, -66, -67, 68, 69};//100烤紻E
+
         fos.write(bytes);
 
         /*

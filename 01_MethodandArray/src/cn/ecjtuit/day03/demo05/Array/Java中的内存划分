@@ -13,7 +13,7 @@ Java的内存划分需要划分为5个部分
     * 若果是布尔类型，那么默认为false
     * 如果是引用类型，那么默认为null
 
-3.方法区（Metho Area）：存储.class相关信息，包含方法的信息
+3.方法区（Method Area）：存储.class相关信息，包含方法的信息
 
 
 4.本地方法栈（Native Method Stack）：与操作系统相关

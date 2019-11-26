@@ -1,6 +1,7 @@
 package cn.ecjtuit.day87.demo01.TCP;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
@@ -47,7 +48,12 @@ public class TCPClient {
         os.write("你好服务器".getBytes());
 
         //4.使用Socket对象中的方法getInputStream()获取网络字节输入流InputStream对象
+        InputStream is = socket.getInputStream();
+
         //5.使用网络字节输入流InputStream对象中的方法read，读取服务器回写的数据
+        byte[] bytes = new byte[1024];
+        int len = is.read(bytes);
+        System.out.println(new String(bytes, 0, len));
 
         //6.释放资源(Socket)
         socket.close();

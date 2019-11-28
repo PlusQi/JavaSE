@@ -41,7 +41,7 @@ public class TCPServer {
 
         //写入HTTP协议响应头，固定写法
         os.write("HTTP/1.1 200 OK\r\n".getBytes());
-        os.write("Content-Typt:text/html\r\n".getBytes());
+        os.write("Content-Type:text/html\r\n".getBytes());
         //必须要写入空行，否则浏览器不解析
         os.write("\r\n".getBytes());
 

@@ -2,7 +2,6 @@ package cn.ecjtuit.day93.demo01.Stream;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /*
 * 使用传统的方式，遍历集合，对集合中的数据进行过滤
 * */

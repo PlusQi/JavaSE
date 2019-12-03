@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 public class Demo02Stream_forEach {
     public static void main(String[] args) {
         //获取一个Stream流
-        Stream<String> st = Stream.of("马坤", "张三", "王五", "李四");
+        Stream<String> st = Stream.of("马坤", "张三", "王五", "李四", "马");
         //使用Stream流中的方法forEach对Stream流中的数据进行遍历
         /*st.forEach((String name) -> {
             System.out.println(name);

@@ -24,7 +24,7 @@ public class ReflectDemo01 {
         Class cls3 = p.getClass();
         System.out.println(cls3);
 
-        //==比较三个对象
+        //==比较三个对象是否相等
         System.out.println(cls1 == cls2);//true
         System.out.println(cls1 == cls3);//true
     }

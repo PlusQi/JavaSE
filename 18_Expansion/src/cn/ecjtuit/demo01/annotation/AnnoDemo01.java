@@ -1,6 +1,6 @@
 package cn.ecjtuit.demo01.annotation;
 
-/*
+/**
 * 注解javadoc演示
 *
 * @author PlusQi
